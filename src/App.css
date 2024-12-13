@@ -1,0 +1,90 @@
+.appContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.mainContent {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 320px;
+  overflow-x: auto;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.toggleSidebar {
+  display: none;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  z-index: 1001;
+}
+
+.toggleSidebar:hover {
+  background: #f8f9fa;
+  border-color: #ced4da;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    margin-right: 0;
+    padding: 15px;
+  }
+
+  .appContainer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 10px;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toggleSidebar {
+    position: fixed;
+    display: block;
+    right: 10px;
+    top: 10px;
+    z-index: 1002;
+  }
+}
+
+@media (max-width: 480px) {
+  .appContainer {
+    padding: 5px;
+  }
+
+  .mainContent {
+    padding: 5px;
+  }
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #333;
+}
