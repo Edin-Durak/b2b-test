@@ -47,10 +47,10 @@ Web aplikacija za prikaz i upravljanje tabelom šifri sa funkcionalnostima pretr
 
 ```bash
 # Kloniranje repozitorija
-git clone https://github.com/your-username/b2b-test-app.git
+git clone https://github.com/Edin-Durak/b2b-test.git
 
 # Ulazak u direktorij
-cd b2b-test-app
+cd b2b-test
 
 # Instalacija dependencies
 npm install
