@@ -27,6 +27,7 @@ function CustomDataGrid({ data, columns }) {
       columnResizingMode="widget"
       columnMinWidth={150}
       width="100%"
+      height="calc(100vh - 150px)" // Dodajemo fiksnu visinu
       loadPanel={{
         enabled: true,
         text: "Učitavanje...",
@@ -54,6 +55,10 @@ function CustomDataGrid({ data, columns }) {
         mode: "standard",
         showScrollbar: "always",
         useNative: true,
+        scrollByContent: true,
+        scrollByThumb: true,
+        rowRenderingMode: "virtual",
+        columnRenderingMode: "virtual",
       }}
       sorting={{
         ascendingText: "Sortiraj uzlazno",

@@ -16,7 +16,9 @@
   margin-right: 320px;
   overflow-x: auto;
 }
-
+.dx-datagrid-headers {
+  font-weight: bold;
+}
 .topBar {
   display: flex;
   align-items: center;
